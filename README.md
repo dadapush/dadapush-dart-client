@@ -23,7 +23,7 @@ version: 1.0.0
 description: DaDaPush Client For Dart
 dependencies:
   DaDaPushClient:
-    git: https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+    git: https://github.com/dadapush/dadapush-dart-client.git
       version: 'any'
 ```
 
