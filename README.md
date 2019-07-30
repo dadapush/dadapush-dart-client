@@ -1,4 +1,4 @@
-# DaDaPushClient
+# dadapush_client
 DaDaPush: Real-time Notifications App
 
 Send real-time notifications through our API without coding and maintaining your own app for iOS or Android devices.
@@ -18,11 +18,11 @@ Dart 1.20.0 or later OR Flutter 0.0.20 or later
 ### Github
 If this Dart package is published to Github, please include the following in pubspec.yaml
 ```
-name: DaDaPushClient
+name: dadapush_client
 version: 1.0.0
 description: DaDaPush Client For Dart
 dependencies:
-  DaDaPushClient:
+  dadapush_client:
     git: https://github.com/dadapush/dadapush-dart-client.git
       version: 'any'
 ```
@@ -31,8 +31,8 @@ dependencies:
 To use the package in your local drive, please include the following in pubspec.yaml
 ```
 dependencies:
-  DaDaPushClient:
-    path: /path/to/DaDaPushClient
+  dadapush_client:
+    path: /path/to/dadapush_client
 ```
 
 ## Tests
@@ -44,7 +44,7 @@ TODO
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
 ```dart
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 
 
 var api_instance = new DaDaPushMessageApi();
@@ -75,23 +75,23 @@ All URIs are relative to *https://www.dadapush.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DaDaPushMessageApi* | [**createMessage**](docs//DaDaPushMessageApi.md#createmessage) | **POST** /api/v1/message | push Message to a Channel
-*DaDaPushMessageApi* | [**deleteMessage**](docs//DaDaPushMessageApi.md#deletemessage) | **DELETE** /api/v1/message/{messageId} | delete a Channel Message
-*DaDaPushMessageApi* | [**getMessage**](docs//DaDaPushMessageApi.md#getmessage) | **GET** /api/v1/message/{messageId} | get a Channel Message
-*DaDaPushMessageApi* | [**getMessages**](docs//DaDaPushMessageApi.md#getmessages) | **GET** /api/v1/messages | get Message List
+*DaDaPushMessageApi* | [**createMessage**](doc//DaDaPushMessageApi.md#createmessage) | **POST** /api/v1/message | push Message to a Channel
+*DaDaPushMessageApi* | [**deleteMessage**](doc//DaDaPushMessageApi.md#deletemessage) | **DELETE** /api/v1/message/{messageId} | delete a Channel Message
+*DaDaPushMessageApi* | [**getMessage**](doc//DaDaPushMessageApi.md#getmessage) | **GET** /api/v1/message/{messageId} | get a Channel Message
+*DaDaPushMessageApi* | [**getMessages**](doc//DaDaPushMessageApi.md#getmessages) | **GET** /api/v1/messages | get Message List
 
 
 ## Documentation For Models
 
- - [Action](docs//Action.md)
- - [MessageObject](docs//MessageObject.md)
- - [MessagePushRequest](docs//MessagePushRequest.md)
- - [MessagePushResponse](docs//MessagePushResponse.md)
- - [PageResponseOfMessageObject](docs//PageResponseOfMessageObject.md)
- - [Result](docs//Result.md)
- - [ResultOfMessageObject](docs//ResultOfMessageObject.md)
- - [ResultOfMessagePushResponse](docs//ResultOfMessagePushResponse.md)
- - [ResultOfPageResponseOfMessageObject](docs//ResultOfPageResponseOfMessageObject.md)
+ - [Action](doc//Action.md)
+ - [MessageObject](doc//MessageObject.md)
+ - [MessagePushRequest](doc//MessagePushRequest.md)
+ - [MessagePushResponse](doc//MessagePushResponse.md)
+ - [PageResponseOfMessageObject](doc//PageResponseOfMessageObject.md)
+ - [Result](doc//Result.md)
+ - [ResultOfMessageObject](doc//ResultOfMessageObject.md)
+ - [ResultOfMessagePushResponse](doc//ResultOfMessagePushResponse.md)
+ - [ResultOfPageResponseOfMessageObject](doc//ResultOfPageResponseOfMessageObject.md)
 
 
 ## Author

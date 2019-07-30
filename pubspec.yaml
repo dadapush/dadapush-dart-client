@@ -1,6 +1,8 @@
-name: DaDaPushClient
+name: dadapush_client
+homepage: https://www.dadapush.com
 version: 1.0.0
 description: DaDaPush Client For Dart
+author: DaDaPush.com <contacts@dadapush.com>
 environment:
   sdk: '>=2.0.0 <3.0.0'
 dependencies:

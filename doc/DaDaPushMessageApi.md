@@ -1,8 +1,8 @@
-# DaDaPushClient.api.DaDaPushMessageApi
+# dadapush_client.api.DaDaPushMessageApi
 
 ## Load the API package
 ```dart
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 ```
 
 All URIs are relative to *https://www.dadapush.com*
@@ -24,7 +24,7 @@ push Message to a Channel
 
 ### Example 
 ```dart
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var body = new MessagePushRequest(); // MessagePushRequest | body
@@ -69,7 +69,7 @@ delete a Channel Message
 
 ### Example 
 ```dart
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var messageId = 789; // int | messageId
@@ -114,7 +114,7 @@ get a Channel Message
 
 ### Example 
 ```dart
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var messageId = 789; // int | messageId
@@ -159,7 +159,7 @@ get Message List
 
 ### Example 
 ```dart
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var page = 1; // int | greater than 1

@@ -1,4 +1,4 @@
-library DaDaPushClient.api;
+library dadapush_client.api;
 
 import 'dart:async';
 import 'dart:convert';

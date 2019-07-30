@@ -1,4 +1,4 @@
-part of DaDaPushClient.api;
+part of dadapush_client.api;
 
 class MessagePushRequest {
   /* action size range is 0,3 */

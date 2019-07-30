@@ -1,4 +1,4 @@
-part of DaDaPushClient.api;
+part of dadapush_client.api;
 
 class DaDaPushMessageApi {
   final ApiClient apiClient;

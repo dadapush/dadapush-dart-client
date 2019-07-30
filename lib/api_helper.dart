@@ -1,4 +1,4 @@
-part of DaDaPushClient.api;
+part of dadapush_client.api;
 
 const _delimiters = const {'csv': ',', 'ssv': ' ', 'tsv': '\t', 'pipes': '|'};
 

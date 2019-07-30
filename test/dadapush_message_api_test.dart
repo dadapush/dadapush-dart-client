@@ -1,4 +1,4 @@
-import 'package:DaDaPushClient/api.dart';
+import 'package:dadapush_client/api.dart';
 import 'package:test/test.dart';
 
 /// tests for DaDaPushMessageApi

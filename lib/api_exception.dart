@@ -1,4 +1,4 @@
-part of DaDaPushClient.api;
+part of dadapush_client.api;
 
 class ApiException implements Exception {
   int code = 0;
