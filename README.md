@@ -49,16 +49,25 @@ import 'package:DaDaPushClient/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var body = new MessagePushRequest(); // MessagePushRequest | body
-var xChannelToken = xChannelToken_example; // String | see: https://www.dadapush.com/channel/list
+var channelToken = channelToken_example; // String | see: https://www.dadapush.com/channel/list
 
 try {
-    var result = api_instance.createMessage(body, xChannelToken);
+    var result = api_instance.createMessage(body, channelToken);
     print(result);
 } catch (e) {
     print("Exception when calling DaDaPushMessageApi->createMessage: $e\n");
 }
 
 ```
+
+## run test
+```shell script
+pub run test -p "chrome" -n 'test createMessage'
+pub run test -p "chrome" -n 'test deleteMessage'
+pub run test -p "chrome" -n 'test getMessageOne'
+pub run test -p "chrome" -n 'test getMessageList'
+```
+
 
 ## Documentation for API Endpoints
 
@@ -88,5 +97,6 @@ Class | Method | HTTP request | Description
 ## Author
 
 contacts@dadapush.com
+
 
 

@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **createMessage**
-> ResultOfMessagePushResponse createMessage(body, xChannelToken)
+> ResultOfMessagePushResponse createMessage(body, channelToken)
 
 push Message to a Channel
 
@@ -28,10 +28,10 @@ import 'package:DaDaPushClient/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var body = new MessagePushRequest(); // MessagePushRequest | body
-var xChannelToken = xChannelToken_example; // String | see: https://www.dadapush.com/channel/list
+var channelToken = channelToken_example; // String | see: https://www.dadapush.com/channel/list
 
 try { 
-    var result = api_instance.createMessage(body, xChannelToken);
+    var result = api_instance.createMessage(body, channelToken);
     print(result);
 } catch (e) {
     print("Exception when calling DaDaPushMessageApi->createMessage: $e\n");
@@ -43,7 +43,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**MessagePushRequest**](MessagePushRequest.md)| body | 
- **xChannelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
+ **channelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
 
 ### Return type
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deleteMessage**
-> Result deleteMessage(messageId, xChannelToken)
+> Result deleteMessage(messageId, channelToken)
 
 delete a Channel Message
 
@@ -73,10 +73,10 @@ import 'package:DaDaPushClient/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var messageId = 789; // int | messageId
-var xChannelToken = xChannelToken_example; // String | see: https://www.dadapush.com/channel/list
+var channelToken = channelToken_example; // String | see: https://www.dadapush.com/channel/list
 
 try { 
-    var result = api_instance.deleteMessage(messageId, xChannelToken);
+    var result = api_instance.deleteMessage(messageId, channelToken);
     print(result);
 } catch (e) {
     print("Exception when calling DaDaPushMessageApi->deleteMessage: $e\n");
@@ -88,7 +88,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **int**| messageId | [default to null]
- **xChannelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
+ **channelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
 
 ### Return type
 
@@ -106,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getMessage**
-> ResultOfMessageObject getMessage(messageId, xChannelToken)
+> ResultOfMessageObject getMessage(messageId, channelToken)
 
 get a Channel Message
 
@@ -118,10 +118,10 @@ import 'package:DaDaPushClient/api.dart';
 
 var api_instance = new DaDaPushMessageApi();
 var messageId = 789; // int | messageId
-var xChannelToken = xChannelToken_example; // String | see: https://www.dadapush.com/channel/list
+var channelToken = channelToken_example; // String | see: https://www.dadapush.com/channel/list
 
 try { 
-    var result = api_instance.getMessage(messageId, xChannelToken);
+    var result = api_instance.getMessage(messageId, channelToken);
     print(result);
 } catch (e) {
     print("Exception when calling DaDaPushMessageApi->getMessage: $e\n");
@@ -133,7 +133,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **int**| messageId | [default to null]
- **xChannelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
+ **channelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
 
 ### Return type
 
@@ -151,7 +151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getMessages**
-> ResultOfPageResponseOfMessageObject getMessages(page, pageSize, xChannelToken)
+> ResultOfPageResponseOfMessageObject getMessages(page, pageSize, channelToken)
 
 get Message List
 
@@ -164,10 +164,10 @@ import 'package:DaDaPushClient/api.dart';
 var api_instance = new DaDaPushMessageApi();
 var page = 1; // int | greater than 1
 var pageSize = 10; // int | range is 1,50
-var xChannelToken = xChannelToken_example; // String | see: https://www.dadapush.com/channel/list
+var channelToken = channelToken_example; // String | see: https://www.dadapush.com/channel/list
 
 try { 
-    var result = api_instance.getMessages(page, pageSize, xChannelToken);
+    var result = api_instance.getMessages(page, pageSize, channelToken);
     print(result);
 } catch (e) {
     print("Exception when calling DaDaPushMessageApi->getMessages: $e\n");
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| greater than 1 | [default to 1]
  **pageSize** | **int**| range is 1,50 | [default to 10]
- **xChannelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
+ **channelToken** | **String**| see: https://www.dadapush.com/channel/list | [optional] [default to null]
 
 ### Return type
 
